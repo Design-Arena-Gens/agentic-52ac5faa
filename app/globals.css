@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #0ea5e9;
+}
+
+html, body { 
+  height: 100%;
+}
+
+* { 
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-sky-600 text-white hover:bg-sky-700 disabled:bg-sky-300 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-white text-gray-900 border border-gray-300 hover:bg-gray-50;
+}
